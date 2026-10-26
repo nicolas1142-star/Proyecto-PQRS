@@ -1,0 +1,13 @@
+:root {
+  --color-primario: #1d4ed8;
+  --color-texto: #1f2937;
+  --color-fondo: #f3f4f6;
+  --color-borde: #d1d5db;
+  --color-error: #b91c1c;
+  --radio: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--color-texto); background: var(--color-fondo); line-height: 1.5; }
+.container { max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+h1 { font-size: 1.6rem; }
+a { color: var(--color-primario); }

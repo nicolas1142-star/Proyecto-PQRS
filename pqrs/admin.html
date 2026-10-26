@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <title>Panel de administración</title>
+</head>
+<body>
+  <nav id="barra-sesion" class="barra"></nav>
+  <main class="container container-ancho">
+    <h1>Panel de administración</h1>
+    <label for="filtro">Filtrar por estado</label>
+    <select id="filtro"><option value="">Todos</option></select>
+    <div id="lista" class="tabla-wrap"></div>
+    <section id="detalle" class="card" hidden></section>
+  </main>
+  <script type="module" src="js/pages/admin.js"></script>
+</body>
+</html>

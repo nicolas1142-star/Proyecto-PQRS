@@ -1,0 +1,12 @@
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: .75rem 1rem; background: #fff; border-bottom: 1px solid var(--color-borde); }
+.barra-der { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+.btn-link { margin: 0; padding: 0; background: none; border: 0; color: var(--color-primario); text-decoration: underline; cursor: pointer; font: inherit; }
+.tabla-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: .6rem; border-bottom: 1px solid var(--color-borde); text-align: left; font-size: .92rem; }
+.badge { display: inline-block; padding: .1rem .55rem; border-radius: 999px; background: #e5e7eb; font-size: .8rem; }
+.badge-Radicada { background: #e5e7eb; } .badge-En-revisión, .badge-En-trámite { background: #fef3c7; }
+.badge-Respondida { background: #d1fae5; } .badge-Cerrada { background: #dbeafe; }
+.container-ancho { max-width: 980px; }
+.exito { color: #047857; }
+.btn-chico { margin: 0; padding: .3rem .7rem; font-size: .85rem; }

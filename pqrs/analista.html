@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <title>Panel del analista</title>
+</head>
+<body>
+  <nav id="barra-sesion" class="barra"></nav>
+  <main class="container container-ancho">
+    <h1>Validación y asignación de solicitudes</h1>
+    <label for="filtro">Mostrar</label>
+    <select id="filtro">
+      <option value="Pendiente">Pendientes de validación</option>
+      <option value="PorAsignar">Validadas por asignar</option>
+      <option value="Asignada">Asignadas</option>
+      <option value="Incompleta">Incompletas</option>
+      <option value="Validada">Validadas</option>
+      <option value="">Todas</option>
+    </select>
+    <div id="lista" class="tabla-wrap"></div>
+    <section id="detalle" class="card" hidden></section>
+  </main>
+  <script type="module" src="js/pages/analista.js"></script>
+</body>
+</html>

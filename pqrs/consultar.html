@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <title>Consultar PQRS</title>
+</head>
+<body>
+  <nav id="barra-sesion" class="barra"></nav>
+  <main class="container">
+    <h1>Consultar estado de mi solicitud</h1>
+    <p>Consulta pública: no necesitas iniciar sesión.</p>
+    <form id="form-consulta" novalidate>
+      <label for="radicado">Número de radicado</label>
+      <input id="radicado" name="radicado" placeholder="PQRS-2026-000001" required>
+      <button type="submit">Consultar</button>
+    </form>
+    <div id="resultado" aria-live="polite"></div>
+  </main>
+  <script type="module" src="js/pages/consultar.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+  <title>Registrar PQRS</title>
+</head>
+<body>
+  <nav id="barra-sesion" class="barra"></nav>
+  <main class="container">
+    <h1>Registrar solicitud</h1>
+    <form id="form-registro" novalidate>
+      <label for="tipo">Tipo</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecciona...</option>
+        <option>Petición</option><option>Queja</option><option>Reclamo</option><option>Sugerencia</option>
+      </select>
+      <span class="error" data-error="tipo"></span>
+
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" name="nombre" required>
+      <span class="error" data-error="nombre"></span>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required>
+      <span class="error" data-error="email"></span>
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+      <span class="error" data-error="descripcion"></span>
+
+      <label for="evidencia">Evidencia (obligatoria, de 1 a 3 archivos de máx. 2 MB: JPG, PNG o PDF)</label>
+      <input id="evidencia" name="evidencia" type="file" multiple accept=".jpg,.jpeg,.png,.pdf" required>
+      <span class="error" data-error="evidencia"></span>
+
+      <span class="error" data-error="general"></span>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <section id="exito" class="card" hidden aria-live="polite">
+      <h2>¡Solicitud registrada!</h2>
+      <p>Guarda tu número de radicado para hacerle seguimiento:</p>
+      <p class="radicado-num"></p>
+      <a class="btn" href="consultar.html">Consultar estado</a>
+      <a class="btn btn-secundario" href="mis-solicitudes.html">Mis solicitudes</a>
+    </section>
+  </main>
+  <script type="module" src="js/pages/registrar.js"></script>
+</body>
+</html>
