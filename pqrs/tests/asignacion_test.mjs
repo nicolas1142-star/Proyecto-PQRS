@@ -139,3 +139,5 @@ test('admin: no puede poner "Asignada" a mano sin asignación', async () => {
   await entrar(cfg.ADMIN_EMAIL, cfg.ADMIN_PASSWORD_INICIAL);
   assert.throws(() => svc.actualizarSolicitud(nueva(), { estado: 'Asignada', respuesta: '' }), /Asignada/);
 });
+
+// Autor: Alejandro Goez
